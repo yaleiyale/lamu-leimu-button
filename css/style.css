@@ -9,7 +9,11 @@
     bottom: 0;
     z-index: 1000;
     line-height: 0;
+<<<<<<< HEAD:css/style.css
     cursor: url(image/bottom/lm.cur), pointer;
+=======
+    cursor: url(/image/bottom/lm.cur), pointer;
+>>>>>>> 3ce431a941b01421b9383f2a9c0cd9352c9c7afa:static/css/style.css
 }
 
 #lamu:hover {
