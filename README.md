@@ -9,5 +9,7 @@
 
 # 效果
 
+由于图床文件类型限制，已删去光标图片
+
 https://user-images.githubusercontent.com/55282569/197342783-9ec4fdae-e145-45ea-878e-07b702df7890.mp4
 
