@@ -4,7 +4,7 @@
 
 如果你在尝试建立博客并想为其加入快速滚动功能，可以直接引入下方语句进行测试。
 ```js
-<script src="https://lestua.ml/lamu-leimu-button/lamu-leimu.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"></script>
 ```
 
 # 效果
