@@ -43,20 +43,24 @@
             -ms-transform: translate(7px, 7px)
         }
 
-        #lamuimg:hover {
+        /* #lamuimg:hover {
             content: url(https://s3.bmp.ovh/imgs/2022/11/17/397c004d3f19b6d4.png);
         }
 
         #leimuimg:hover {
             content: url(https://s3.bmp.ovh/imgs/2022/11/17/f919214a999e9b40.png);
-        }
+        } */
     </style>
     <div id="lamu-leimu">
         <div id="leimu">
-            <img id="leimuimg" src="https://s3.bmp.ovh/imgs/2022/11/17/7559a0733c038906.png" alt="雷姆">
+            <img id="leimuimg" src="https://s3.bmp.ovh/imgs/2022/11/17/7559a0733c038906.png" alt="雷姆"
+                onmouseover="this.src='https://s3.bmp.ovh/imgs/2022/11/17/f919214a999e9b40.png'"
+                onmouseout="this.src='https://s3.bmp.ovh/imgs/2022/11/17/7559a0733c038906.png'">
         </div>
         <div id="lamu">
-            <img id="lamuimg" src="https://s3.bmp.ovh/imgs/2022/11/17/79def61f4ada76f7.png" alt="拉姆">
+            <img id="lamuimg" src="https://s3.bmp.ovh/imgs/2022/11/17/79def61f4ada76f7.png" alt="拉姆"
+                onmouseover="this.src='https://s3.bmp.ovh/imgs/2022/11/17/397c004d3f19b6d4.png'"
+                onmouseout="this.src='https://s3.bmp.ovh/imgs/2022/11/17/79def61f4ada76f7.png'">
         </div>
     </div>
     <script>
