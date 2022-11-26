@@ -4,14 +4,14 @@
     <style>
         @media (max-width:540px) {
 
-            #leimu,
-            #lamu {
+            #lamu,
+            #leimu {
                 display: none
             }
         }
 
-        #leimu,
-        #lamu {
+        #lamu,
+        #leimu {
             position: fixed;
             z-index: 10;
             line-height: 0;
@@ -28,13 +28,6 @@
             -ms-transform: translate(-7px, -7px)
         }
 
-        #leimu:hover,
-        #lamu:hover {
-            -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-            -ms-transform: translate(0, 0)
-        }
-
         #leimu {
             right: 0;
             bottom: 0;
@@ -43,41 +36,52 @@
             -ms-transform: translate(7px, 7px)
         }
 
-        /* #lamuimg:hover {
-            content: url(https://s3.bmp.ovh/imgs/2022/11/17/397c004d3f19b6d4.png);
+        #lamu:hover,
+        #leimu:hover {
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+            -ms-transform: translate(0, 0)
         }
-
-        #leimuimg:hover {
-            content: url(https://s3.bmp.ovh/imgs/2022/11/17/f919214a999e9b40.png);
-        } */
     </style>
-    <div id="lamu-leimu">
-        <div id="leimu">
-            <img id="leimuimg" src="https://s3.bmp.ovh/imgs/2022/11/17/7559a0733c038906.png" alt="雷姆"
-                onmouseover="this.src='https://s3.bmp.ovh/imgs/2022/11/17/f919214a999e9b40.png'"
-                onmouseout="this.src='https://s3.bmp.ovh/imgs/2022/11/17/7559a0733c038906.png'">
-        </div>
-        <div id="lamu">
-            <img id="lamuimg" src="https://s3.bmp.ovh/imgs/2022/11/17/79def61f4ada76f7.png" alt="拉姆"
-                onmouseover="this.src='https://s3.bmp.ovh/imgs/2022/11/17/397c004d3f19b6d4.png'"
-                onmouseout="this.src='https://s3.bmp.ovh/imgs/2022/11/17/79def61f4ada76f7.png'">
-        </div>
+    <div id="lamu">
+        <img id="lamuimg" src="https://s3.bmp.ovh/imgs/2022/11/17/79def61f4ada76f7.png" alt="拉姆">
     </div>
+    <div id="leimu">
+        <img id="leimuimg" src="https://s3.bmp.ovh/imgs/2022/11/17/7559a0733c038906.png" alt="雷姆">
+    </div>
+
     <script>
-        document.getElementById('lamu').onclick = function () {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-            return false;
-        };
-        document.getElementById('leimu').onclick = function () {
-            window.scrollTo({
-                top: (document.documentElement && document.documentElement.scrollHeight) || document.body.scrollHeight,
-                behavior: "smooth"
-            });
-            return false;
-        };
+        (function () {
+            const lamu = document.getElementById('lamuimg')
+            lamu.onclick = function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+                return false;
+            };
+            lamu.onmouseover = function () {
+                lamu.src = 'https://s3.bmp.ovh/imgs/2022/11/17/397c004d3f19b6d4.png'
+            }
+            lamu.onmouseout = function () {
+                lamu.src = 'https://s3.bmp.ovh/imgs/2022/11/17/79def61f4ada76f7.png'
+            }
+
+            const leimu = document.getElementById('leimuimg')
+            leimu.onclick = function () {
+                window.scrollTo({
+                    top: (document.documentElement && document.documentElement.scrollHeight) || document.body.scrollHeight,
+                    behavior: "smooth"
+                });
+                return false;
+            };
+            leimu.onmouseover = function () {
+                leimu.src = 'https://s3.bmp.ovh/imgs/2022/11/17/f919214a999e9b40.png'
+            }
+            leimu.onmouseout = function () {
+                leimu.src = 'https://s3.bmp.ovh/imgs/2022/11/17/7559a0733c038906.png'
+            }
+        })()
     </script>
 </body>
 
