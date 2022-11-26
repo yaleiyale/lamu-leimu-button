@@ -4,7 +4,7 @@
 
 如果你在尝试建立博客并想为其加入快速滚动功能，可以直接引入下方语句进行测试。
 ```js
-<script src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@1.0/lamu-leimu.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/yaleiyale/lamu-leimu-button@master/lamu-leimu.min.js"></script>
 ```
 由于图床文件类型限制，已删去光标图片，点击拉姆回到顶部，点击雷姆到达底部  
 ![image](https://user-images.githubusercontent.com/55282569/202417973-52b750ce-b40c-457c-a53d-c4ec3051117c.png)  
